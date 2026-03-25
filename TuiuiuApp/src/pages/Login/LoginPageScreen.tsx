@@ -58,7 +58,9 @@ export default function LoginScreen() {
 
         <View style={styles.row}>
           <Text>☐ Lembrar-me</Text>
-          <Text style={styles.link}>Esqueceu a senha?</Text>
+          <Text style={styles.link} onPress={() => navigation.navigate("ForgotPassword")}>
+            Esqueceu a senha?
+          </Text>
         </View>
 
         <TouchableOpacity style={styles.button}>
